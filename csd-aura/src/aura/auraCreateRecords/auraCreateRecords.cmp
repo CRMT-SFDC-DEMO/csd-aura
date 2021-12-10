@@ -1,0 +1,35 @@
+<aura:component controller="auraCreateRecordsController" implements="flexipage:availableForAllPageTypes,force:appHostable"
+ access="global">
+  <!-- attributes -->
+    <aura:attribute name="iconName" type="String" default="standard:scan_card"/>
+    <aura:attribute name="cardTitle" type="String" default="Crea Record Aura"/>
+    <aura:attribute name="fields" type="String" default='{}'/>
+    <aura:attribute name="fieldListArr" type="String[]"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="recordTypeName" type="String"/>
+    <aura:attribute name="recordTypeId" type="String" />
+    
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:registerEvent name="refresh" type="c:updateDataTable"/>
+    
+    <!-- HEADER -->
+    <lightning:layout class="slds-page-header slds-page-header_object-home">
+        <lightning:layoutItem>
+            <lightning:icon iconName="{!v.iconName}" alternativeText="Aura Crea Record"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="horizontal-small" class="page-section page-header slds-text-heading_medium">
+            {!v.cardTitle}
+        </lightning:layoutItem>
+    </lightning:layout>
+
+    <lightning:card>
+        <lightning:recordEditForm objectApiName="Time_Management__c" recordTypeId="{!v.recordTypeId}" onsuccess="{!c.handleSuccess}">
+            <aura:iteration  items="{!v.fieldListArr}" var="item">
+                <lightning:inputField fieldName="{!item.fieldName}" aura:id="field" required="{!item.required}"/>
+            </aura:iteration>
+            <lightning:button type="submit" name="Submit" label="Crea" class="slds-align_absolute-center"/>
+        </lightning:recordEditForm>
+    </lightning:card>
+
+</aura:component>

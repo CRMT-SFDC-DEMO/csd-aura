@@ -1,0 +1,6 @@
+<design:component>
+	<design:attribute name="iconName" label="Inserisci Icona"/>
+	<design:attribute name="cardTitle" label="Inserisci Titolo"/>
+	<design:attribute name="fields" label="Inserisci JSON dei Campi"/>
+	<design:attribute name="recordTypeName" label="Inserisci RecordType" />
+</design:component>

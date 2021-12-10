@@ -1,0 +1,8 @@
+<design:component>
+    <design:attribute name="iconName" label="Inserisci Icona"/>
+	<design:attribute name="cardTitle" label="Inserisci Titolo Tabella"/>
+	<design:attribute name="fields" label="Inserisci JSON con le colonne da mostrare"/>
+    <design:attribute name="recordTypeName" label="Inserisci RecordType"/>
+    <design:attribute name="query" label="Lista di Campi separati da una virgola"/>
+    <design:attribute name="obj" label="Inserisci Oggetto"/>
+</design:component>
