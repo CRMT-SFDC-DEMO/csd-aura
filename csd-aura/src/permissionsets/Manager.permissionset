@@ -122,4 +122,8 @@
         <tab>Time_Management__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
+	<tabSettings>
+        <tab>Aura_Home_Page</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>
