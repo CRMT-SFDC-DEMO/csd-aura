@@ -48,8 +48,6 @@ public with sharing class dataTableController {
 
     @AuraEnabled
     public static String getURL(){
-       List<Environment__c> urls = [SELECT Current_Domain__c FROM Environment__c];
-       return !urls.isEmpty() ? urls[0].Current_Domain__c : null;
-
+       return System.URL.getSalesforceBaseUrl().toExternalForm() + '/';
     }
 }
