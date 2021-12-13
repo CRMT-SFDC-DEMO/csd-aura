@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">    
     <types>
-        <members>CostoDaApprovareTrigger_Test</members>
-        <members>ScheduleCheckSpesedaControllare</members>
-        <members>ScheduleCheckSpesedaControllare_Test</members>
         <members>auraCreateRecordsController</members>
         <members>auraCreateRecordsController_Test</members>
         <members>dataTableController</members>
