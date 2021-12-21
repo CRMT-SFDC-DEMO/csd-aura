@@ -5,9 +5,25 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>auraCreateRecordsController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+	<classAccesses>
         <apexClass>dataTableController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+	<classAccesses>
+        <apexClass>ScheduleCheckSpesedaControllare</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+	<classAccesses>
+        <apexClass>testDataFactory</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+	<customMetadataTypeAccesses>
+        <enabled>true</enabled>
+        <name>Gestione_Nota_Spese__mdt</name>
+    </customMetadataTypeAccesses>
     <fieldPermissions>
         <editable>true</editable>
         <field>Dipendente__c.User__c</field>
