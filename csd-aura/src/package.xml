@@ -5,6 +5,8 @@
         <members>auraCreateRecordsController_Test</members>
         <members>dataTableController</members>
         <members>dataTableController_Test</members>
+		<members>ScheduleCheckSpesedaControllare</members>
+		<members>ScheduleCheckSpesedaControllare__Test</members>
         <members>testDataFactory</members>
         <name>ApexClass</name>
     </types>
