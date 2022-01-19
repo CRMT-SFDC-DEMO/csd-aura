@@ -6,7 +6,7 @@
         <members>dataTableController</members>
         <members>dataTableController_Test</members>
 		<members>ScheduleCheckSpesedaControllare</members>
-		<members>ScheduleCheckSpesedaControllare__Test</members>
+		<members>ScheduleCheckSpesedaControllare_Test</members>
         <members>testDataFactory</members>
         <name>ApexClass</name>
     </types>
